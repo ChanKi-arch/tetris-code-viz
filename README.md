@@ -14,7 +14,9 @@ Paste code or import a session-like trace, then watch the structure become falli
 
 ## Preview
 
-![Tetris Code Viz demo](./assets/demo.gif)
+<p align="center">
+  <img src="./assets/demo.gif" alt="Tetris Code Viz demo" width="640" />
+</p>
 
 ---
 
