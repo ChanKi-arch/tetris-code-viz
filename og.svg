@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.08" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 100 L1200 100 M0 200 L1200 200 M0 300 L1200 300 M0 400 L1200 400 M0 500 L1200 500"/>
+    <path d="M100 0 L100 630 M200 0 L200 630 M300 0 L300 630 M400 0 L400 630 M500 0 L500 630 M600 0 L600 630 M700 0 L700 630 M800 0 L800 630 M900 0 L900 630 M1000 0 L1000 630 M1100 0 L1100 630"/>
+  </g>
+
+  <!-- 3D Building (isometric blocks stacked) -->
+  <g transform="translate(150, 130)">
+    <!-- Foundation layer -->
+    <rect x="0"   y="320" width="80" height="60" fill="url(#emerald)" opacity="0.95" stroke="#022c22" stroke-width="2"/>
+    <rect x="80"  y="320" width="80" height="60" fill="url(#emerald)" opacity="0.95" stroke="#022c22" stroke-width="2"/>
+    <rect x="160" y="320" width="80" height="60" fill="url(#emerald)" opacity="0.95" stroke="#022c22" stroke-width="2"/>
+    <text x="20" y="358" fill="#022c22" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="700">import</text>
+
+    <!-- Column / function -->
+    <rect x="0"   y="240" width="80" height="80" fill="url(#cyan)" opacity="0.95" stroke="#083344" stroke-width="2"/>
+    <rect x="80"  y="240" width="80" height="80" fill="url(#cyan)" opacity="0.95" stroke="#083344" stroke-width="2"/>
+    <text x="20" y="290" fill="#083344" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="700">function</text>
+
+    <!-- Branch hub -->
+    <rect x="0"   y="180" width="160" height="60" fill="url(#amber)" opacity="0.95" stroke="#451a03" stroke-width="2"/>
+    <text x="40" y="218" fill="#451a03" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="700">if / else</text>
+
+    <!-- Safety net -->
+    <rect x="0"   y="120" width="80" height="60" fill="url(#rose)" opacity="0.95" stroke="#4c0519" stroke-width="2"/>
+    <text x="6" y="156" fill="#4c0519" font-family="ui-monospace,Menlo,monospace" font-size="11" font-weight="700">try/catch</text>
+
+    <!-- Roof -->
+    <rect x="80"   y="120" width="80" height="60" fill="url(#purple)" opacity="0.95" stroke="#2e1065" stroke-width="2"/>
+    <text x="100" y="158" fill="#2e1065" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="700">return</text>
+
+    <!-- Falling block (next piece) -->
+    <g opacity="0.85">
+      <rect x="200" y="60" width="40" height="40" fill="url(#purple)" stroke="#fff" stroke-width="2"/>
+      <rect x="240" y="60" width="40" height="40" fill="url(#purple)" stroke="#fff" stroke-width="2"/>
+      <line x1="220" y1="100" x2="220" y2="120" stroke="#a78bfa" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Right side text -->
+  <g transform="translate(550, 180)">
+    <text x="0" y="0" fill="#f8fafc" font-family="ui-sans-serif,system-ui,-apple-system,sans-serif" font-size="64" font-weight="800" letter-spacing="-2">Tetris Code Viz</text>
+    <text x="0" y="60" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="500">Watch AI code pile up</text>
+    <text x="0" y="92" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="500">as falling 3D blocks</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 145)" font-family="ui-monospace,Menlo,monospace" font-size="13" font-weight="600">
+      <rect x="0"   y="0" width="80"  height="28" rx="14" fill="#1e293b" stroke="#475569"/>
+      <text x="14"  y="19" fill="#cbd5e1">React 18</text>
+      <rect x="92"  y="0" width="80"  height="28" rx="14" fill="#1e293b" stroke="#475569"/>
+      <text x="106" y="19" fill="#cbd5e1">Three.js</text>
+      <rect x="184" y="0" width="90"  height="28" rx="14" fill="#1e293b" stroke="#475569"/>
+      <text x="194" y="19" fill="#cbd5e1">Single HTML</text>
+      <rect x="286" y="0" width="92"  height="28" rx="14" fill="#1e293b" stroke="#475569"/>
+      <text x="298" y="19" fill="#cbd5e1">Open Source</text>
+    </g>
+
+    <!-- Live demo URL -->
+    <text x="0" y="220" fill="#67e8f9" font-family="ui-monospace,Menlo,monospace" font-size="18" font-weight="500">→ live demo · open source · MIT</text>
+  </g>
+
+  <!-- Footer brand -->
+  <g transform="translate(60, 570)">
+    <text x="0" y="0" fill="#475569" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="500" letter-spacing="2">CHANKI LABS · 2026</text>
+  </g>
+  <g transform="translate(1140, 570)" text-anchor="end">
+    <text x="0" y="0" fill="#475569" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="500">tetris-code-viz.vercel.app</text>
+  </g>
+</svg>
