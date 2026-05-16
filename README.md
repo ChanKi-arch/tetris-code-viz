@@ -254,8 +254,7 @@ Built by **Chan Ki** in Korea.
 
 If you are working on AI coding tools, developer experience, code visualization, or architecture observability, feel free to reach out.
 
-- LinkedIn: <YOUR_LINKEDIN_URL>
-- GitHub: <https://github.com/your-username>
+- LinkedIn: https://www.linkedin.com/in/ki-chan-62b3123a3/
 
 ---
 
